@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Salvatierra</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  </head>
+  <body id="about">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+          <!--modifique el tamaño del logo con fs-1-->
+        <a class="navbar-brand fs-1 font" href="#">SALVATIERRA</a>
+          <!--quitar el borde del toggle(logo del menu) con shadow-none border-0 -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5></h5>
+            <button type="button" class="btn-close  shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body d-flex text-center">
+            <ul class="navbar-nav  align-items-center  flex-grow-1 pe-1">
+              <li class="nav-item mx-3">
+                <a class="nav-link " href="#index.html">HOME</a>
+              </li>
+              <!--con mx-2 corro hacia la derecha-->
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#about.html">ABOUT</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#ourwork.html">OUR WORK</a>
+              </li>
+              <li class="nav-item mx-2 button border rounded-pill shadow p-2">
+                <a class="nav-link active text-white" aria-current="page" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="p-5">
+      <div class="container p-5">
+        <div class="texto text-center">
+          <h1 class="p-5 display-5">About Salvatierra</h1>
+            <p><strong>Salvatierra</strong> was created in the United States in 2008. We are a <strong>Global</strong> and <strong>Multi-Cultural</strong> company.
+                We are not limited by geographic or cultural barriers and encourage diversity in our people as well as our projects.<p></p>
+                Our team is made-up by highly skilled professionals and organizations located in different parts of the world.  We assemble professional service teams based on the needs of our clients and the requirements of each transaction.<p></p>
+                We only work with reliable professionals who are aligned with our values of trustworthiness, discipline and top-performance.</p>
+        </div>
+      </div>
+      
+      <div class="container">
+        <h1 class="display-5">Contact Us</h1>
+        <!--EN VEZ DE USAR P-3 PROBAR CON MT-3 MAS ADELANTE-->
+          <form class="row needs-validation g-3 mt-3" novalidate>
+            <div class="col-6">
+              <label for="emailImput" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailImput" placeholder="email@example.com" required>
+              <div class="valid-feedback">
+                Todo Bien
+              </div>
+              <div class="invalid-feedback">
+                Escribe nuevamente tu email correctamente
+              </div>
+            </div>
+
+            <div class="col-6">
+              <label for="inputPass" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña" required>
+              <div class="valid-feedback">
+                Todo Bien
+              </div>
+              <div class="invalid-feedback">
+                Escribe nuevamente tu password correctamente
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Dirección">
+            </div>
+
+            <div class="col-12">
+              <label for="validationTextarea" class="form-label">Comentarios</label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Escribe tu mensaje" required></textarea>
+              <div class="valid-feedback">
+                Todo Bien
+              </div>
+              <div class="invalid-feedback">
+                Escribe nuevamente tu comentario correctamente
+              </div>
+            </div>
+
+            <div class="col-6">
+              <label for="cityInput" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="cityInput" placeholder="Ciudad">
+            </div>
+
+            <div class="col-3">
+              <label for="postalCodeInput" class="form-label">CP</label>
+              <input type="text" class="form-control" id="postalCodecityInput" placeholder="Codigo Postal">
+            </div>
+
+            <div class="col-3">
+              <label for="countryInput" class="form-label">Country</label>
+              <input type="text" class="form-control" id="countryInput" placeholder="Pais" required>
+              <div class="valid-feedback">
+                Todo Bien
+              </div>
+              <div class="invalid-feedback">
+                Escribe nuevamente tu Pais correctamente
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="checkTerms" required>
+                <label for="checkTerms" class="form-check-label">Acepto los términos y condiciones</label>
+              </div>
+              <div class="valid-feedback">
+                Todo Bien
+              </div>
+              <div class="invalid-feedback">
+                Debes aceptar los términos y condiciones antes de enviar tu correo
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">
+                Send
+              </button>
+            </div>
+          </form>
+      </div>
+    </section>
+
+    <div class="container">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ">
+        <div class="col mb-3">
+          <img src="/img/logofuryhawk.png" alt="">
+          <p class="text-body-secondary">&copy; 2023, Creado <br>por Furyhawk.</p>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#about.html" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="#ourwork.html" class="nav-link p-0 text-body-secondary">Our Work</a></li>
+            <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-body-secondary">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Download</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://www.scribd.com/embeds/566956980/content?start_page=1&view_mode=scroll&access_key=key-K1jGKew2Ypd4Yvh2LLCt" class="nav-link p-0 text-body-secondary">Senovia</a></li>
+            <li class="nav-item mb-2"><a href="https://www.scribd.com/embeds/355834969/content?start_page=1&view_mode=scroll&access_key=key-G3GuabG3GYoJU5t45hXb" class="nav-link p-0 text-body-secondary">Amazon Village</a></li>
+            <li class="nav-item mb-2"><a href="https://www.scribd.com/embeds/529809590/content?start_page=1&view_mode=scroll&access_key=key-cSqFAiksz05fLvb3NKFx" class="nav-link p-0 text-body-secondary">Lindura</a></li>
+          </ul>
+        </div>
+    
+        <div class="col mb-3">
+          <h5>Contact</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><strong>Phone</strong>: (011) 68815008</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><strong>Address</strong>: J.F Kennedy 21, Brazil</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

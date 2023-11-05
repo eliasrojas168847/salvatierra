@@ -1,0 +1,79 @@
+/*FUENTE DEL LOGO*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/*TITULO PRINCIPAL DEL INDEX JUNTO AL LOGO*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,800&display=swap');
+/*Menu lateral*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+nav ul {
+    justify-content: end;
+}
+
+nav ul li{
+    font-family: 'Oswald', sans-serif;
+}
+.button {
+    background-color: rgba(8, 170, 255, 0.83);
+    
+}
+
+.font{
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+#parallax-image{
+    background-image: url(/img/Skyscrapers.jpg);
+    height: 420px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position:top;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#parallax-image2{
+    background-image: url(/img/Skyscrapers.jpg);
+    height: 310px;
+    background-attachment: fixed;
+    background-position:bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+#parallax-image h1{
+    font-size: 48px;
+    color: white;
+}
+
+.titulo{
+    padding-top: 14%;
+    font-family: 'Playfair Display', serif;
+}
+
+.shadow-sm {
+    transition: 0.7s;
+}
+
+footer img {
+    width: 7rem;
+}
+footer h5{
+    font-family: 'Oswald', sans-serif
+}
+@media(max-width: 991px){
+    nav ul {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 576px){
+    #parallax-image h1{
+        font-size: 34px;
+        color: white;
+    }
+}
