@@ -27,7 +27,7 @@ h2 {
 
 
 #parallax-image{
-    background-image: url(/img/Skyscrapers.jpg);
+    background-image: url(img/Skyscrapers.jpg);
     height: 420px;
     margin-bottom: 50px;
     background-attachment: fixed;
@@ -37,7 +37,7 @@ h2 {
 }
 
 #parallax-image2{
-    background-image: url(/img/Skyscrapers.jpg);
+    background-image: url(img/Skyscrapers.jpg);
     height: 310px;
     background-attachment: fixed;
     background-position:bottom;
